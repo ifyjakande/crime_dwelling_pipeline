@@ -102,34 +102,9 @@ This Apache Airflow DAG implements an automated ETL pipeline for processing and 
 - Data completeness checks
 
 ## Task Dependencies 🔄
-```
-start_pipeline
-├── create_staging_crime_table ─┐
-├── create_crime_table ────────┐│
-├── create_staging_dwelling_table ┐│
-└── create_dwelling_table ───────┐││
-                                │││
-                                ▼▼│
-            load_staging_crime_data │
-                        │          │
-                        ▼          │
-                transform_crime_data│
-                        │          │
-                        ▼          │
-               data_quality_check  │
-                        │         │
-                        ▼         ▼
-                    end_pipeline ◄─
-                        ▲         ▲
-                        │         │
-        dwelling_data_quality_check│
-                        │         │
-                        ▲         │
-            transform_dwelling_data│
-                        ▲         │
-                        │         │
-            load_staging_dwelling_data
-```
+
+![image](https://github.com/user-attachments/assets/837cb3d7-968d-4f58-b342-29e805053469)
+
 
 ## Maintenance 🔧
 - Staging tables are automatically dropped after use
