@@ -157,6 +157,3 @@ Common issues can be diagnosed through:
 - Data quality check results
 - Airflow task logs
 - Redshift STL_LOAD_ERRORS table
-
-## Contact 📧
-For questions or issues, contact the data engineering team.
