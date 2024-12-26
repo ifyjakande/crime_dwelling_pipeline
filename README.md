@@ -3,6 +3,12 @@
 ## Overview 📋
 This Apache Airflow DAG implements an automated ETL pipeline for processing and analyzing Northern Ireland crime and new dwelling completion data. The pipeline extracts data from S3, loads it into Redshift staging tables, performs data transformation, and conducts quality checks.
 
+## Data Analytics & Insights 📊
+- **Northern Ireland Crime & Housing Statistics Dashboard**: [View Interactive Dashboard](https://lookerstudio.google.com/reporting/00d16ee0-71be-4de6-92df-f6739064cfd9/page/bxxPE#) 
+  - Interactive visualization of regional crime patterns and dwelling completions
+  - Cross-analysis of housing development and crime statistics by district
+  - Real-time access to transformed pipeline data
+
 ## Data Sources 📊
 - **Crime Data**: Police recorded crime monthly data 👮
   - Source: S3 bucket `northern-ireland-crime-data`
