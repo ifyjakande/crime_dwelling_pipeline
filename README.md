@@ -8,6 +8,17 @@ This Apache Airflow DAG implements an automated ETL pipeline for processing and 
   - Interactive visualization of regional crime patterns and dwelling completions
   - Cross-analysis of housing development and crime statistics by district
   - Real-time access to transformed pipeline data
+ 
+## Architecture Diagram 🏗️
+![Modern Data Stack: Northern Ireland Crime and Housing Analytics Pipeline](architecture.png)
+
+Key Components:
+- **Data Sources**: Crime Data and New Dwelling Data
+- **Data Storage**: AWS S3 Bucket
+- **Data Processing**: Apache Airflow
+- **Data Transformation**: dbt
+- **Data Warehouse**: AWS Redshift
+- **Data Visualization**: Looker Studio
 
 ## Data Sources 📊
 - **Crime Data**: Police recorded crime monthly data 👮
